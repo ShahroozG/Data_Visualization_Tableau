@@ -1,0 +1,1786 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="imdb_id" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="popularity" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="budget" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="revenue" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="original_title" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="cast" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="homepage" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="director" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="tagline" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="keywords" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="overview" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="runtime" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="genres" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="production_companies" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="release_date" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="vote_count" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="vote_average" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="release_year" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="budget_adj" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="revenue_adj" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="popularity" selected="False" type="Double" size="8" />
+            <SelectField field="budget" selected="False" type="Int64" size="8" />
+            <SelectField field="revenue" selected="False" type="Int64" size="8" />
+            <SelectField field="keywords" selected="True" />
+            <SelectField field="genres" selected="True" />
+            <SelectField field="production_companies" selected="True" />
+            <SelectField field="vote_average" selected="True" type="Double" size="8" />
+            <SelectField field="release_year" selected="True" type="Int32" size="4" />
+            <SelectField field="budget_adj" selected="True" type="Double" size="8" />
+            <SelectField field="revenue_adj" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="174" width="132" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Modifying data types and selecting attributes</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_92fb740d1a594eb5bc46863d31695113_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([genres]) AND [budget_adj] != 0 AND [revenue_adj] != 0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([genres]) AND [budget_adj] != 0 AND [revenue_adj] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="534" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>genres</Field>
+          <NumFields value="1" />
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_420a8b69357946fd8ffe15ed5c2fb39a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="66" width="100" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Separating Genres</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_a080af3f95f643a390ae66d0fdf67158_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="642" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="id" />
+          </GroupFields>
+          <HeaderField field="genres" />
+          <DataField field="Profit Adj" />
+          <Methods>
+            <Method method="Count" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="CrossTab:Group:Count:" type="V_String" />
+            <Field name="Count_Action" source="CrossTab:Header:genres:Action:CountNonNulls:" type="Double" />
+            <Field name="Count_Adventure" source="CrossTab:Header:genres:Adventure:CountNonNulls:" type="Double" />
+            <Field name="Count_Animation" source="CrossTab:Header:genres:Animation:CountNonNulls:" type="Double" />
+            <Field name="Count_Comedy" source="CrossTab:Header:genres:Comedy:CountNonNulls:" type="Double" />
+            <Field name="Count_Crime" source="CrossTab:Header:genres:Crime:CountNonNulls:" type="Double" />
+            <Field name="Count_Documentary" source="CrossTab:Header:genres:Documentary:CountNonNulls:" type="Double" />
+            <Field name="Count_Drama" source="CrossTab:Header:genres:Drama:CountNonNulls:" type="Double" />
+            <Field name="Count_Family" source="CrossTab:Header:genres:Family:CountNonNulls:" type="Double" />
+            <Field name="Count_Fantasy" source="CrossTab:Header:genres:Fantasy:CountNonNulls:" type="Double" />
+            <Field name="Count_Foreign" source="CrossTab:Header:genres:Foreign:CountNonNulls:" type="Double" />
+            <Field name="Count_History" source="CrossTab:Header:genres:History:CountNonNulls:" type="Double" />
+            <Field name="Count_Horror" source="CrossTab:Header:genres:Horror:CountNonNulls:" type="Double" />
+            <Field name="Count_Music" source="CrossTab:Header:genres:Music:CountNonNulls:" type="Double" />
+            <Field name="Count_Mystery" source="CrossTab:Header:genres:Mystery:CountNonNulls:" type="Double" />
+            <Field name="Count_Romance" source="CrossTab:Header:genres:Romance:CountNonNulls:" type="Double" />
+            <Field name="Count_Science_Fiction" source="CrossTab:Header:genres:Science Fiction:CountNonNulls:" type="Double" />
+            <Field name="Count_Thriller" source="CrossTab:Header:genres:Thriller:CountNonNulls:" type="Double" />
+            <Field name="Count_TV_Movie" source="CrossTab:Header:genres:TV Movie:CountNonNulls:" type="Double" />
+            <Field name="Count_War" source="CrossTab:Header:genres:War:CountNonNulls:" type="Double" />
+            <Field name="Count_Western" source="CrossTab:Header:genres:Western:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Profit Adj" type="Double" size="8" expression="[revenue_adj]-[budget_adj]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Profit Adj=[revenue_adj]-[budget_adj]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="738" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="Count_Action" selected="True" rename="Action" type="Int16" size="2" />
+            <SelectField field="Count_Family" selected="True" rename="Family" type="Int16" size="2" />
+            <SelectField field="Count_Adventure" selected="True" rename="Adventure" type="Int16" size="2" />
+            <SelectField field="Count_Foreign" selected="True" rename="Foreign" type="Int16" size="2" />
+            <SelectField field="Count_Fantasy" selected="True" rename="Fantasy" type="Int16" size="2" />
+            <SelectField field="Count_Documentary" selected="True" rename="Documentry" type="Int16" size="2" />
+            <SelectField field="Count_Music" selected="True" rename="Music" type="Int16" size="2" />
+            <SelectField field="Count_Drama" selected="True" rename="Drama" type="Int16" size="2" />
+            <SelectField field="Count_Crime" selected="True" rename="Crime" type="Int16" size="2" />
+            <SelectField field="Count_Comedy" selected="True" rename="Comedy" type="Int16" size="2" />
+            <SelectField field="Count_History" selected="True" rename="History" type="Int16" size="2" />
+            <SelectField field="Count_TV_Movie" selected="True" rename="TV_Movie" type="Int16" size="2" />
+            <SelectField field="Count_Western" selected="True" rename="Western" type="Int16" size="2" />
+            <SelectField field="Count_Mystery" selected="True" rename="Mystery" type="Int16" size="2" />
+            <SelectField field="Count_Horror" selected="True" rename="Horror" type="Int16" size="2" />
+            <SelectField field="Count_Science_Fiction" selected="True" rename="Science_Fiction" type="Int16" size="2" />
+            <SelectField field="Count_Animation" selected="True" rename="Animation" type="Int16" size="2" />
+            <SelectField field="Count_Romance" selected="True" rename="Romance" type="Int16" size="2" />
+            <SelectField field="Count_War" selected="True" rename="War" type="Int16" size="2" />
+            <SelectField field="Count_Thriller" selected="True" rename="Thriller" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings>
+        <Position x="834" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Action","Family","Adventure","Foreign","Fantasy","Documentry","Music","Drama","Crime","Comedy","History","TV_Movie","Western","Mystery","Horror","Science_Fiction","Animation","Romance","War","Thriller"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_6354a6340c46478ea4502ad863693042_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="918" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Left_keywords" selected="False" />
+                <SelectField field="Left_genres" selected="False" />
+                <SelectField field="Left_production_companies" selected="False" />
+                <SelectField field="Left_budget_adj" selected="False" />
+                <SelectField field="Left_revenue_adj" selected="False" />
+                <SelectField field="Right_id" selected="False" rename="Right_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1026" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_8b27381000844e1ba475b64d4a4c2965_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1038" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies_cleaned_for_Genres.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies_cleaned_for_Genres.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1098" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>release_year</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>2015</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[release_year] = 2015</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1230" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Drama" action="Sum" rename="Sum_Drama" />
+            <SummarizeField field="Comedy" action="Sum" rename="Sum_Comedy" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1338" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_25f0aa91a83d4e04ba64213e62821ab1_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1158" y="42" width="192" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Testing Tableau results for 2015 Number of movies in Drama and Comedy Genres</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1110" y="234" width="120" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output file for Genres (Q1)</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="594" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>production_companies</Field>
+          <NumFields value="1" />
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="666" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="id" />
+          </GroupFields>
+          <HeaderField field="production_companies" />
+          <DataField field="Profit Adj" />
+          <Methods>
+            <Method method="Count" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="CrossTab:Group:Count:" type="V_String" />
+            <Field name="Count_20th_Century_Fox_Russia" source="CrossTab:Header:production_companies:20th Century Fox Russia:CountNonNulls:" type="Double" />
+            <Field name="Count_26_Films" source="CrossTab:Header:production_companies:26 Films:CountNonNulls:" type="Double" />
+            <Field name="Count_40_Acres___A_Mule_Filmworks" source="CrossTab:Header:production_companies:40 Acres &amp; A Mule Filmworks:CountNonNulls:" type="Double" />
+            <Field name="Count_5150_Action" source="CrossTab:Header:production_companies:5150 Action:CountNonNulls:" type="Double" />
+            <Field name="Count_A_Band_Apart" source="CrossTab:Header:production_companies:A Band Apart:CountNonNulls:" type="Double" />
+            <Field name="Count_A_M_Films" source="CrossTab:Header:production_companies:A&amp;M Films:CountNonNulls:" type="Double" />
+            <Field name="Count_A_Team" source="CrossTab:Header:production_companies:A-Team:CountNonNulls:" type="Double" />
+            <Field name="Count_ABC_Pictures" source="CrossTab:Header:production_companies:ABC Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Alan_Landsburg_Productions" source="CrossTab:Header:production_companies:Alan Landsburg Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Alfran_Productions" source="CrossTab:Header:production_companies:Alfran Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Alive_Films" source="CrossTab:Header:production_companies:Alive Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Alliance_Atlantis_Communications" source="CrossTab:Header:production_companies:Alliance Atlantis Communications:CountNonNulls:" type="Double" />
+            <Field name="Count_Allspark_Pictures" source="CrossTab:Header:production_companies:Allspark Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Alphaville_Films" source="CrossTab:Header:production_companies:Alphaville Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Alphaville_Productions" source="CrossTab:Header:production_companies:Alphaville Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Amblin_Entertainment" source="CrossTab:Header:production_companies:Amblin Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_American_Films" source="CrossTab:Header:production_companies:American Films:CountNonNulls:" type="Double" />
+            <Field name="Count_American_Werewolf_Inc_" source="CrossTab:Header:production_companies:American Werewolf Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_American_Zoetrope" source="CrossTab:Header:production_companies:American Zoetrope:CountNonNulls:" type="Double" />
+            <Field name="Count_Andell_Entertainment" source="CrossTab:Header:production_companies:Andell Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Anonymous_Content" source="CrossTab:Header:production_companies:Anonymous Content:CountNonNulls:" type="Double" />
+            <Field name="Count_Apatow_Productions" source="CrossTab:Header:production_companies:Apatow Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Apparatus_Productions" source="CrossTab:Header:production_companies:Apparatus Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Appian_Way" source="CrossTab:Header:production_companies:Appian Way:CountNonNulls:" type="Double" />
+            <Field name="Count_Ardustry_Entertainment" source="CrossTab:Header:production_companies:Ardustry Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Art_Linson_Productions" source="CrossTab:Header:production_companies:Art Linson Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Artists_Entertainment_Complex" source="CrossTab:Header:production_companies:Artists Entertainment Complex:CountNonNulls:" type="Double" />
+            <Field name="Count_Artists_Production_Group__APG_" source="CrossTab:Header:production_companies:Artists Production Group (APG):CountNonNulls:" type="Double" />
+            <Field name="Count_Associated_Capital" source="CrossTab:Header:production_companies:Associated Capital:CountNonNulls:" type="Double" />
+            <Field name="Count_Atlantic_Television" source="CrossTab:Header:production_companies:Atlantic Television:CountNonNulls:" type="Double" />
+            <Field name="Count_Atlas_Entertainment" source="CrossTab:Header:production_companies:Atlas Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Atmosphere_Entertainment_MM" source="CrossTab:Header:production_companies:Atmosphere Entertainment MM:CountNonNulls:" type="Double" />
+            <Field name="Count_ATR_Films" source="CrossTab:Header:production_companies:ATR Films:CountNonNulls:" type="Double" />
+            <Field name="Count_AZL_Productions_KG" source="CrossTab:Header:production_companies:AZL Productions KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Azoff_Entertainment" source="CrossTab:Header:production_companies:Azoff Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Bad_Robot" source="CrossTab:Header:production_companies:Bad Robot:CountNonNulls:" type="Double" />
+            <Field name="Count_Baldwin_Entertainment_Group" source="CrossTab:Header:production_companies:Baldwin Entertainment Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Barry_Mendel_Productions" source="CrossTab:Header:production_companies:Barry Mendel Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Bazelevs_Production" source="CrossTab:Header:production_companies:Bazelevs Production:CountNonNulls:" type="Double" />
+            <Field name="Count_BBC_Films" source="CrossTab:Header:production_companies:BBC Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Beacon_Communications" source="CrossTab:Header:production_companies:Beacon Communications:CountNonNulls:" type="Double" />
+            <Field name="Count_Bedford_Falls_Productions" source="CrossTab:Header:production_companies:Bedford Falls Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_BenderSpink" source="CrossTab:Header:production_companies:BenderSpink:CountNonNulls:" type="Double" />
+            <Field name="Count_Big_Kid_Pictures" source="CrossTab:Header:production_companies:Big Kid Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Big_Primate_Pictures" source="CrossTab:Header:production_companies:Big Primate Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Big_Talk_Productions" source="CrossTab:Header:production_companies:Big Talk Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Birnbaum_Barber" source="CrossTab:Header:production_companies:Birnbaum/Barber:CountNonNulls:" type="Double" />
+            <Field name="Count_Black___White_Productions" source="CrossTab:Header:production_companies:Black &amp; White Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Blackout_Productions_Inc_" source="CrossTab:Header:production_companies:Blackout Productions Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Blind_Wink" source="CrossTab:Header:production_companies:Blind Wink:CountNonNulls:" type="Double" />
+            <Field name="Count_Blinding_Edge_Pictures" source="CrossTab:Header:production_companies:Blinding Edge Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Blue_Flower_Productions" source="CrossTab:Header:production_companies:Blue Flower Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Blue_Wolf" source="CrossTab:Header:production_companies:Blue Wolf:CountNonNulls:" type="Double" />
+            <Field name="Count_Bluegrass_Films" source="CrossTab:Header:production_companies:Bluegrass Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Blumhouse_Productions" source="CrossTab:Header:production_companies:Blumhouse Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Bourne_Again" source="CrossTab:Header:production_companies:Bourne Again:CountNonNulls:" type="Double" />
+            <Field name="Count_Bregman_Baer_Productions" source="CrossTab:Header:production_companies:Bregman/Baer Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Brightlight_Pictures" source="CrossTab:Header:production_companies:Brightlight Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Brillstein_Grey_Entertainment" source="CrossTab:Header:production_companies:Brillstein-Grey Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Bristol_Bay_Productions" source="CrossTab:Header:production_companies:Bristol Bay Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_British_Broadcasting_Corporation__BBC_" source="CrossTab:Header:production_companies:British Broadcasting Corporation (BBC):CountNonNulls:" type="Double" />
+            <Field name="Count_Broken_Chair_Flickz" source="CrossTab:Header:production_companies:Broken Chair Flickz:CountNonNulls:" type="Double" />
+            <Field name="Count_Broken_Road_Productions" source="CrossTab:Header:production_companies:Broken Road Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Brownstone_Productions" source="CrossTab:Header:production_companies:Brownstone Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Brucks_Entertainment" source="CrossTab:Header:production_companies:Brucks Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Buckaroo_Entertainment" source="CrossTab:Header:production_companies:Buckaroo Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Bungalow_78_Productions" source="CrossTab:Header:production_companies:Bungalow 78 Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Callahan_Filmworks" source="CrossTab:Header:production_companies:Callahan Filmworks:CountNonNulls:" type="Double" />
+            <Field name="Count_CAMERON_MACKINTOSH" source="CrossTab:Header:production_companies:CAMERON MACKINTOSH:CountNonNulls:" type="Double" />
+            <Field name="Count_Camp___Thompson_Pictures" source="CrossTab:Header:production_companies:Camp / Thompson Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Canadian_Film_Development_Corporation__CFDC_" source="CrossTab:Header:production_companies:Canadian Film Development Corporation (CFDC):CountNonNulls:" type="Double" />
+            <Field name="Count_Canadian_Film_or_Video_Production_Tax_Credit__CPTC_" source="CrossTab:Header:production_companies:Canadian Film or Video Production Tax Credit (CPTC):CountNonNulls:" type="Double" />
+            <Field name="Count_Canal_Plus" source="CrossTab:Header:production_companies:Canal Plus:CountNonNulls:" type="Double" />
+            <Field name="Count_Canal_" source="CrossTab:Header:production_companies:Canal+:CountNonNulls:" type="Double" />
+            <Field name="Count_Capcom" source="CrossTab:Header:production_companies:Capcom:CountNonNulls:" type="Double" />
+            <Field name="Count_Capella" source="CrossTab:Header:production_companies:Capella:CountNonNulls:" type="Double" />
+            <Field name="Count_Capella_International" source="CrossTab:Header:production_companies:Capella International:CountNonNulls:" type="Double" />
+            <Field name="Count_Capital_Equipment_Leasing" source="CrossTab:Header:production_companies:Capital Equipment Leasing:CountNonNulls:" type="Double" />
+            <Field name="Count_Cappa_Productions" source="CrossTab:Header:production_companies:Cappa Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Captivate_Entertainment" source="CrossTab:Header:production_companies:Captivate Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Carolco_Pictures" source="CrossTab:Header:production_companies:Carolco Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Castle_Rock_Entertainment" source="CrossTab:Header:production_companies:Castle Rock Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Cent_Productions_Inc_" source="CrossTab:Header:production_companies:Cent Productions Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Centropolis_Entertainment" source="CrossTab:Header:production_companies:Centropolis Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Chambara_Pictures" source="CrossTab:Header:production_companies:Chambara Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Channel_Productions" source="CrossTab:Header:production_companies:Channel Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Chaplin_Film_Productions_Ltd_" source="CrossTab:Header:production_companies:Chaplin Film Productions Ltd.:CountNonNulls:" type="Double" />
+            <Field name="Count_Chernin_Entertainment" source="CrossTab:Header:production_companies:Chernin Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Cherry_Alley_Productions" source="CrossTab:Header:production_companies:Cherry Alley Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_China_Film_Co_Production_Corporation" source="CrossTab:Header:production_companies:China Film Co-Production Corporation:CountNonNulls:" type="Double" />
+            <Field name="Count_China_Film_Group_Corporation__CFGC_" source="CrossTab:Header:production_companies:China Film Group Corporation (CFGC):CountNonNulls:" type="Double" />
+            <Field name="Count_China_Movie_Channel" source="CrossTab:Header:production_companies:China Movie Channel:CountNonNulls:" type="Double" />
+            <Field name="Count_Cinema_Group_Ventures" source="CrossTab:Header:production_companies:Cinema Group Ventures:CountNonNulls:" type="Double" />
+            <Field name="Count_Cineplex_Odeon_Films" source="CrossTab:Header:production_companies:Cineplex-Odeon Films:CountNonNulls:" type="Double" />
+            <Field name="Count_CinÃ__" source="CrossTab:Header:production_companies:CinÃ©+:CountNonNulls:" type="Double" />
+            <Field name="Count_City_Light_Films" source="CrossTab:Header:production_companies:City Light Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Classico" source="CrossTab:Header:production_companies:Classico:CountNonNulls:" type="Double" />
+            <Field name="Count_Clinica_Estetico" source="CrossTab:Header:production_companies:Clinica Estetico:CountNonNulls:" type="Double" />
+            <Field name="Count_Closest_to_the_Hole_Productions" source="CrossTab:Header:production_companies:Closest to the Hole Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Cobalt_Media_Group" source="CrossTab:Header:production_companies:Cobalt Media Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Cold_Spring_Pictures" source="CrossTab:Header:production_companies:Cold Spring Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Colossal_Pictures" source="CrossTab:Header:production_companies:Colossal Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Columbia_Pictures" source="CrossTab:Header:production_companies:Columbia Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Columbia_Pictures_Corporation" source="CrossTab:Header:production_companies:Columbia Pictures Corporation:CountNonNulls:" type="Double" />
+            <Field name="Count_Columbus_Circle_Films" source="CrossTab:Header:production_companies:Columbus Circle Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Company_Films" source="CrossTab:Header:production_companies:Company Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Constant_c_Productions" source="CrossTab:Header:production_companies:Constant c Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Constellation_Entertainment" source="CrossTab:Header:production_companies:Constellation Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Conundrum_Entertainment" source="CrossTab:Header:production_companies:Conundrum Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Core_Productions" source="CrossTab:Header:production_companies:Core Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Cort_Madden_Productions" source="CrossTab:Header:production_companies:Cort/Madden Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Cranium_Films" source="CrossTab:Header:production_companies:Cranium Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Cross_Creek_Pictures" source="CrossTab:Header:production_companies:Cross Creek Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Cruise_Wagner_Productions" source="CrossTab:Header:production_companies:Cruise-Wagner Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Cruise_Wagner_Productions2" source="CrossTab:Header:production_companies:Cruise/Wagner Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Cube_Vision" source="CrossTab:Header:production_companies:Cube Vision:CountNonNulls:" type="Double" />
+            <Field name="Count_Curse_Productions" source="CrossTab:Header:production_companies:Curse Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Dalian_Wanda_Group" source="CrossTab:Header:production_companies:Dalian Wanda Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Daniel_Bobker_Productions" source="CrossTab:Header:production_companies:Daniel Bobker Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Dark_Horse_Entertainment" source="CrossTab:Header:production_companies:Dark Horse Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Darkside_Movie" source="CrossTab:Header:production_companies:Darkside Movie:CountNonNulls:" type="Double" />
+            <Field name="Count_David_Brown_Productions" source="CrossTab:Header:production_companies:David Brown Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_David_Foster_Productions" source="CrossTab:Header:production_companies:David Foster Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Davis_Entertainment" source="CrossTab:Header:production_companies:Davis Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Davis_Films" source="CrossTab:Header:production_companies:Davis-Films:CountNonNulls:" type="Double" />
+            <Field name="Count_DC_Comics" source="CrossTab:Header:production_companies:DC Comics:CountNonNulls:" type="Double" />
+            <Field name="Count_De_Fina_Cappa" source="CrossTab:Header:production_companies:De Fina-Cappa:CountNonNulls:" type="Double" />
+            <Field name="Count_De_Laurentiis_Entertainment_Group" source="CrossTab:Header:production_companies:De Laurentiis Entertainment Group:CountNonNulls:" type="Double" />
+            <Field name="Count_De_Line_Pictures" source="CrossTab:Header:production_companies:De Line Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_De_Milo" source="CrossTab:Header:production_companies:De Milo:CountNonNulls:" type="Double" />
+            <Field name="Count_DeBart" source="CrossTab:Header:production_companies:DeBart:CountNonNulls:" type="Double" />
+            <Field name="Count_Debra_Hill_Productions" source="CrossTab:Header:production_companies:Debra Hill Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Dentsu" source="CrossTab:Header:production_companies:Dentsu:CountNonNulls:" type="Double" />
+            <Field name="Count_Dentsu_Inc_" source="CrossTab:Header:production_companies:Dentsu Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Denver_and_Delilah_Productions" source="CrossTab:Header:production_companies:Denver and Delilah Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Depth_of_Field" source="CrossTab:Header:production_companies:Depth of Field:CountNonNulls:" type="Double" />
+            <Field name="Count_Desertlands_Entertainment" source="CrossTab:Header:production_companies:Desertlands Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Di_Bonaventura_Pictures" source="CrossTab:Header:production_companies:Di Bonaventura Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Dickhouse_Productions" source="CrossTab:Header:production_companies:Dickhouse Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Dino_De_Laurentiis_Company" source="CrossTab:Header:production_companies:Dino De Laurentiis Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Disruption_Entertainment" source="CrossTab:Header:production_companies:Disruption Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_DNA_Films" source="CrossTab:Header:production_companies:DNA Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Don_Simpson_Jerry_Bruckheimer_Films" source="CrossTab:Header:production_companies:Don Simpson/Jerry Bruckheimer Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Donners__Company" source="CrossTab:Header:production_companies:Donners' Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Double_Feature_Films" source="CrossTab:Header:production_companies:Double Feature Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Douglas_Reuther_Productions" source="CrossTab:Header:production_companies:Douglas/Reuther Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Dreamworks_Pictures" source="CrossTab:Header:production_companies:Dreamworks Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_DreamWorks_Pictures2" source="CrossTab:Header:production_companies:DreamWorks Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_DreamWorks_SKG" source="CrossTab:Header:production_companies:DreamWorks SKG:CountNonNulls:" type="Double" />
+            <Field name="Count_Dune_Films" source="CrossTab:Header:production_companies:Dune Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Eddie_Murphy_Productions" source="CrossTab:Header:production_companies:Eddie Murphy Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Edge_City" source="CrossTab:Header:production_companies:Edge City:CountNonNulls:" type="Double" />
+            <Field name="Count_Electric_Shepherd_Productions" source="CrossTab:Header:production_companies:Electric Shepherd Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_EMI_Films_Ltd_" source="CrossTab:Header:production_companies:EMI Films Ltd.:CountNonNulls:" type="Double" />
+            <Field name="Count_EMJAG_Productions" source="CrossTab:Header:production_companies:EMJAG Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Endgame_Entertainment" source="CrossTab:Header:production_companies:Endgame Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Epic_Productions" source="CrossTab:Header:production_companies:Epic Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Escape_Artists" source="CrossTab:Header:production_companies:Escape Artists:CountNonNulls:" type="Double" />
+            <Field name="Count_Etalon_film" source="CrossTab:Header:production_companies:Etalon film:CountNonNulls:" type="Double" />
+            <Field name="Count_EuropaCorp" source="CrossTab:Header:production_companies:EuropaCorp:CountNonNulls:" type="Double" />
+            <Field name="Count_Everyman_Pictures" source="CrossTab:Header:production_companies:Everyman Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Evolution_Entertainment" source="CrossTab:Header:production_companies:Evolution Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Exception_Wild_Bunch" source="CrossTab:Header:production_companies:Exception Wild Bunch:CountNonNulls:" type="Double" />
+            <Field name="Count_Failure_to_Launch_Productions" source="CrossTab:Header:production_companies:Failure to Launch Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Fake_Empire" source="CrossTab:Header:production_companies:Fake Empire:CountNonNulls:" type="Double" />
+            <Field name="Count_Famous_Players_Limited" source="CrossTab:Header:production_companies:Famous Players Limited:CountNonNulls:" type="Double" />
+            <Field name="Count_Famous_Players_Ltd" source="CrossTab:Header:production_companies:Famous Players Ltd:CountNonNulls:" type="Double" />
+            <Field name="Count_Farrell_Minoff" source="CrossTab:Header:production_companies:Farrell/Minoff:CountNonNulls:" type="Double" />
+            <Field name="Count_Fear_and_Loathing_LLC" source="CrossTab:Header:production_companies:Fear and Loathing LLC:CountNonNulls:" type="Double" />
+            <Field name="Count_Film_44" source="CrossTab:Header:production_companies:Film 44:CountNonNulls:" type="Double" />
+            <Field name="Count_Film_Properties_International_N_V_" source="CrossTab:Header:production_companies:Film Properties International N.V.:CountNonNulls:" type="Double" />
+            <Field name="Count_Film_Rites" source="CrossTab:Header:production_companies:Film Rites:CountNonNulls:" type="Double" />
+            <Field name="Count_Film4" source="CrossTab:Header:production_companies:Film4:CountNonNulls:" type="Double" />
+            <Field name="Count_Filmauro" source="CrossTab:Header:production_companies:Filmauro:CountNonNulls:" type="Double" />
+            <Field name="Count_Filmplan_International_II" source="CrossTab:Header:production_companies:Filmplan International II:CountNonNulls:" type="Double" />
+            <Field name="Count_FilmWorks" source="CrossTab:Header:production_companies:FilmWorks:CountNonNulls:" type="Double" />
+            <Field name="Count_Fireworks_Pictures" source="CrossTab:Header:production_companies:Fireworks Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Flynn_Picture_Company" source="CrossTab:Header:production_companies:Flynn Picture Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Focus_Features" source="CrossTab:Header:production_companies:Focus Features:CountNonNulls:" type="Double" />
+            <Field name="Count_Focus_Films" source="CrossTab:Header:production_companies:Focus Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Foqus_Arte_Digital" source="CrossTab:Header:production_companies:Foqus Arte Digital:CountNonNulls:" type="Double" />
+            <Field name="Count_Forward_Pass" source="CrossTab:Header:production_companies:Forward Pass:CountNonNulls:" type="Double" />
+            <Field name="Count_France_3_CinÃ_ma" source="CrossTab:Header:production_companies:France 3 CinÃ©ma:CountNonNulls:" type="Double" />
+            <Field name="Count_Free_State_Pictures" source="CrossTab:Header:production_companies:Free State Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Fuji_Television_Network" source="CrossTab:Header:production_companies:Fuji Television Network:CountNonNulls:" type="Double" />
+            <Field name="Count_Fuzzy_Door_Productions" source="CrossTab:Header:production_companies:Fuzzy Door Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Gambit_Pictures" source="CrossTab:Header:production_companies:Gambit Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Gary_Sanchez_Productions" source="CrossTab:Header:production_companies:Gary Sanchez Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Gaumont" source="CrossTab:Header:production_companies:Gaumont:CountNonNulls:" type="Double" />
+            <Field name="Count_Georgetown_Productions_Inc_" source="CrossTab:Header:production_companies:Georgetown Productions Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Ghost_House_Pictures" source="CrossTab:Header:production_companies:Ghost House Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_GHS_Productions_KG" source="CrossTab:Header:production_companies:GHS Productions KG:CountNonNulls:" type="Double" />
+            <Field name="Count_GK_Films" source="CrossTab:Header:production_companies:GK Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Golar_Productions" source="CrossTab:Header:production_companies:Golar Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Gold_Circle_Films" source="CrossTab:Header:production_companies:Gold Circle Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Goldcrest_Pictures" source="CrossTab:Header:production_companies:Goldcrest Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Good_Machine" source="CrossTab:Header:production_companies:Good Machine:CountNonNulls:" type="Double" />
+            <Field name="Count_Good_Universe" source="CrossTab:Header:production_companies:Good Universe:CountNonNulls:" type="Double" />
+            <Field name="Count_Gordon_Company" source="CrossTab:Header:production_companies:Gordon Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Gran_Via_Productions" source="CrossTab:Header:production_companies:Gran Via Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Graveyard_Productions" source="CrossTab:Header:production_companies:Graveyard Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Great_Wight_Productions__Osford_Films" source="CrossTab:Header:production_companies:Great Wight Productions/ Osford Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Grosvenor_Park_Impact_Productions" source="CrossTab:Header:production_companies:Grosvenor Park Impact Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Guardian_Trust_Company" source="CrossTab:Header:production_companies:Guardian Trust Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Guber_Peters_Company" source="CrossTab:Header:production_companies:Guber/Peters Company:CountNonNulls:" type="Double" />
+            <Field name="Count_H2F_Entertainment" source="CrossTab:Header:production_companies:H2F Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Hanna_Barbera_Productions" source="CrossTab:Header:production_companies:Hanna-Barbera Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Happy_Madison_Productions" source="CrossTab:Header:production_companies:Happy Madison Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Harlequin_Pictures" source="CrossTab:Header:production_companies:Harlequin Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Hasbro" source="CrossTab:Header:production_companies:Hasbro:CountNonNulls:" type="Double" />
+            <Field name="Count_Hasbro_Studios" source="CrossTab:Header:production_companies:Hasbro Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Hell_s_Kitchen_Films" source="CrossTab:Header:production_companies:Hell's Kitchen Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Hemisphere_Media_Capital" source="CrossTab:Header:production_companies:Hemisphere Media Capital:CountNonNulls:" type="Double" />
+            <Field name="Count_Herrick_Entertainment" source="CrossTab:Header:production_companies:Herrick Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Hit___Run_Productions" source="CrossTab:Header:production_companies:Hit &amp; Run Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Horror_Inc_" source="CrossTab:Header:production_companies:Horror Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Horsepower_Films" source="CrossTab:Header:production_companies:Horsepower Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Horseshoe_Bay_Productions" source="CrossTab:Header:production_companies:Horseshoe Bay Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Hughes_Entertainment" source="CrossTab:Header:production_companies:Hughes Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Hypnotic" source="CrossTab:Header:production_companies:Hypnotic:CountNonNulls:" type="Double" />
+            <Field name="Count_Icon_Entertainment_International" source="CrossTab:Header:production_companies:Icon Entertainment International:CountNonNulls:" type="Double" />
+            <Field name="Count_Illumination_Entertainment" source="CrossTab:Header:production_companies:Illumination Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Image_Entertainment" source="CrossTab:Header:production_companies:Image Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_ImageMovers" source="CrossTab:Header:production_companies:ImageMovers:CountNonNulls:" type="Double" />
+            <Field name="Count_Imagine_Entertainment" source="CrossTab:Header:production_companies:Imagine Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Imagine_Films_Entertainment" source="CrossTab:Header:production_companies:Imagine Films Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Imhotep_Productions" source="CrossTab:Header:production_companies:Imhotep Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Impact_Pictures" source="CrossTab:Header:production_companies:Impact Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Imperial_Entertainment" source="CrossTab:Header:production_companies:Imperial Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Imperial_Filmproduktion" source="CrossTab:Header:production_companies:Imperial Filmproduktion:CountNonNulls:" type="Double" />
+            <Field name="Count_Indian_Paintbrush" source="CrossTab:Header:production_companies:Indian Paintbrush:CountNonNulls:" type="Double" />
+            <Field name="Count_IndieProd_Company_Productions" source="CrossTab:Header:production_companies:IndieProd Company Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Indochina_Productions" source="CrossTab:Header:production_companies:Indochina Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Industrial_Light___Magic__ILM_" source="CrossTab:Header:production_companies:Industrial Light &amp; Magic (ILM):CountNonNulls:" type="Double" />
+            <Field name="Count_Infinitum_Nihil" source="CrossTab:Header:production_companies:Infinitum Nihil:CountNonNulls:" type="Double" />
+            <Field name="Count_Ingenious_Film_Partners" source="CrossTab:Header:production_companies:Ingenious Film Partners:CountNonNulls:" type="Double" />
+            <Field name="Count_Insurge_Pictures" source="CrossTab:Header:production_companies:Insurge Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Intermedia_Films" source="CrossTab:Header:production_companies:Intermedia Films:CountNonNulls:" type="Double" />
+            <Field name="Count_International_Cinema_Corporation__ICC_" source="CrossTab:Header:production_companies:International Cinema Corporation (ICC):CountNonNulls:" type="Double" />
+            <Field name="Count_Internationale_Filmproduktion" source="CrossTab:Header:production_companies:Internationale Filmproduktion:CountNonNulls:" type="Double" />
+            <Field name="Count_Internationale_Filmproduktion_Richter" source="CrossTab:Header:production_companies:Internationale Filmproduktion Richter:CountNonNulls:" type="Double" />
+            <Field name="Count_Internationale_Filmproduktion_Stella_del_SÃ_d" source="CrossTab:Header:production_companies:Internationale Filmproduktion Stella-del-SÃ¼d:CountNonNulls:" type="Double" />
+            <Field name="Count_Interscope_Communications" source="CrossTab:Header:production_companies:Interscope Communications:CountNonNulls:" type="Double" />
+            <Field name="Count_Intertainment_AG" source="CrossTab:Header:production_companies:Intertainment AG:CountNonNulls:" type="Double" />
+            <Field name="Count_Ixtlan" source="CrossTab:Header:production_companies:Ixtlan:CountNonNulls:" type="Double" />
+            <Field name="Count_Jaffilms_Inc_" source="CrossTab:Header:production_companies:Jaffilms Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Jerry_Lewis_Productions" source="CrossTab:Header:production_companies:Jerry Lewis Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Jersey_Films" source="CrossTab:Header:production_companies:Jersey Films:CountNonNulls:" type="Double" />
+            <Field name="Count_John_Ford_Productions" source="CrossTab:Header:production_companies:John Ford Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_JVC_Entertainment_Networks" source="CrossTab:Header:production_companies:JVC Entertainment Networks:CountNonNulls:" type="Double" />
+            <Field name="Count_K_O_Camera_Toys" source="CrossTab:Header:production_companies:K/O Camera Toys:CountNonNulls:" type="Double" />
+            <Field name="Count_Kalima_Productions_GmbH___Co__KG" source="CrossTab:Header:production_companies:Kalima Productions GmbH &amp; Co. KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Kaplan_Perrone_Entertainment" source="CrossTab:Header:production_companies:Kaplan/Perrone Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Karol_Film_Productions" source="CrossTab:Header:production_companies:Karol Film Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Katalyst_Films" source="CrossTab:Header:production_companies:Katalyst Films:CountNonNulls:" type="Double" />
+            <Field name="Count_KC_Medien" source="CrossTab:Header:production_companies:KC Medien:CountNonNulls:" type="Double" />
+            <Field name="Count_KC_Medien_AG" source="CrossTab:Header:production_companies:KC Medien AG:CountNonNulls:" type="Double" />
+            <Field name="Count_Kennedy_Miller_Productions" source="CrossTab:Header:production_companies:Kennedy Miller Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Kennedy_Marshall_Company__The" source="CrossTab:Header:production_companies:Kennedy/Marshall Company, The:CountNonNulls:" type="Double" />
+            <Field name="Count_Kerner_Entertainment_Company" source="CrossTab:Header:production_companies:Kerner Entertainment Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Kernos_Filmproduktionsgesellschaft___Company" source="CrossTab:Header:production_companies:Kernos Filmproduktionsgesellschaft &amp; Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Kickstart_Productions" source="CrossTab:Header:production_companies:Kickstart Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_KMP_Film_Invest" source="CrossTab:Header:production_companies:KMP Film Invest:CountNonNulls:" type="Double" />
+            <Field name="Count_Kontsept_Film_Company" source="CrossTab:Header:production_companies:Kontsept Film Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Kopelson_Entertainment" source="CrossTab:Header:production_companies:Kopelson Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Koppelmann_Bandier_Carnegie_Pictures" source="CrossTab:Header:production_companies:Koppelmann/Bandier-Carnegie Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Krane_Entertainment" source="CrossTab:Header:production_companies:Krane Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Kumar_Mobiliengesellschaft_mbH___Co__Projekt_Nr__2_KG" source="CrossTab:Header:production_companies:Kumar Mobiliengesellschaft mbH &amp; Co. Projekt Nr. 2 KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Kurtzman_Orci" source="CrossTab:Header:production_companies:Kurtzman/Orci:CountNonNulls:" type="Double" />
+            <Field name="Count_Lakeshore_Entertainment" source="CrossTab:Header:production_companies:Lakeshore Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Largo_Entertainment" source="CrossTab:Header:production_companies:Largo Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Larry_Franco_Productions" source="CrossTab:Header:production_companies:Larry Franco Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Laura_Bickford_Productions" source="CrossTab:Header:production_companies:Laura Bickford Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Laurel_Productions" source="CrossTab:Header:production_companies:Laurel Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Laurence_Mark_Productions" source="CrossTab:Header:production_companies:Laurence Mark Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Lawrence_Gordon_Productions" source="CrossTab:Header:production_companies:Lawrence Gordon Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Legendary_Pictures" source="CrossTab:Header:production_companies:Legendary Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Leverage_Management" source="CrossTab:Header:production_companies:Leverage Management:CountNonNulls:" type="Double" />
+            <Field name="Count_Licht_Mueller_Film_Corporation" source="CrossTab:Header:production_companies:Licht/Mueller Film Corporation:CountNonNulls:" type="Double" />
+            <Field name="Count_Lightstorm_Entertainment" source="CrossTab:Header:production_companies:Lightstorm Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Linson_Entertainment" source="CrossTab:Header:production_companies:Linson Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Lion_Rock_Productions" source="CrossTab:Header:production_companies:Lion Rock Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Lions_Gate_Films" source="CrossTab:Header:production_companies:Lions Gate Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Little_Bird" source="CrossTab:Header:production_companies:Little Bird:CountNonNulls:" type="Double" />
+            <Field name="Count_Littlestar" source="CrossTab:Header:production_companies:Littlestar:CountNonNulls:" type="Double" />
+            <Field name="Count_LivePlanet" source="CrossTab:Header:production_companies:LivePlanet:CountNonNulls:" type="Double" />
+            <Field name="Count_Liveplanet2" source="CrossTab:Header:production_companies:Liveplanet:CountNonNulls:" type="Double" />
+            <Field name="Count_Long_Road_Productions" source="CrossTab:Header:production_companies:Long Road Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Loofah_Productions" source="CrossTab:Header:production_companies:Loofah Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Lorimar_Film_Entertainment" source="CrossTab:Header:production_companies:Lorimar Film Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Loumolo___Co_" source="CrossTab:Header:production_companies:Loumolo &amp; Co.:CountNonNulls:" type="Double" />
+            <Field name="Count_Lucasfilm" source="CrossTab:Header:production_companies:Lucasfilm:CountNonNulls:" type="Double" />
+            <Field name="Count_Ludlum_Entertainment" source="CrossTab:Header:production_companies:Ludlum Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Lyncanthrope_Films" source="CrossTab:Header:production_companies:Lyncanthrope Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Lynda_Obst_Productions" source="CrossTab:Header:production_companies:Lynda Obst Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_LÃ_gende_Entreprises" source="CrossTab:Header:production_companies:LÃ©gende Entreprises:CountNonNulls:" type="Double" />
+            <Field name="Count_Mace_Neufeld_Productions" source="CrossTab:Header:production_companies:Mace Neufeld Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Malpaso_Company" source="CrossTab:Header:production_companies:Malpaso Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Malpaso_Productions" source="CrossTab:Header:production_companies:Malpaso Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Management_360" source="CrossTab:Header:production_companies:Management 360:CountNonNulls:" type="Double" />
+            <Field name="Count_Mandalay_Pictures" source="CrossTab:Header:production_companies:Mandalay Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Mandate_Pictures" source="CrossTab:Header:production_companies:Mandate Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Manhattan_Project" source="CrossTab:Header:production_companies:Manhattan Project:CountNonNulls:" type="Double" />
+            <Field name="Count_Marc_Platt_Productions" source="CrossTab:Header:production_companies:Marc Platt Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Mark_Gordon_Productions" source="CrossTab:Header:production_companies:Mark Gordon Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Martin_Poll_Productions" source="CrossTab:Header:production_companies:Martin Poll Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Marty_Katz_Productions" source="CrossTab:Header:production_companies:Marty Katz Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Marubeni" source="CrossTab:Header:production_companies:Marubeni:CountNonNulls:" type="Double" />
+            <Field name="Count_Marv_Films" source="CrossTab:Header:production_companies:Marv Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Marvel_Enterprises" source="CrossTab:Header:production_companies:Marvel Enterprises:CountNonNulls:" type="Double" />
+            <Field name="Count_Marvel_Studios" source="CrossTab:Header:production_companies:Marvel Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_MavroCine_Pictures_GmbH___Co__KG" source="CrossTab:Header:production_companies:MavroCine Pictures GmbH &amp; Co. KG:CountNonNulls:" type="Double" />
+            <Field name="Count_MDBF_Zweite_Filmgesellschaft" source="CrossTab:Header:production_companies:MDBF Zweite Filmgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_MDP_Worldwide" source="CrossTab:Header:production_companies:MDP Worldwide:CountNonNulls:" type="Double" />
+            <Field name="Count_Media_Rights_Capital" source="CrossTab:Header:production_companies:Media Rights Capital:CountNonNulls:" type="Double" />
+            <Field name="Count_Mediastream_Film_GmbH___Co__Productions_KG" source="CrossTab:Header:production_companies:Mediastream Film GmbH &amp; Co. Productions KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Medienproduktion_Poseidon_Filmgesellschaft" source="CrossTab:Header:production_companies:Medienproduktion Poseidon Filmgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Medienproduktion_Prometheus_Filmgesellschaft" source="CrossTab:Header:production_companies:Medienproduktion Prometheus Filmgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Mel_s_Cite_du_Cinema" source="CrossTab:Header:production_companies:Mel's Cite du Cinema:CountNonNulls:" type="Double" />
+            <Field name="Count_Metro_Goldwyn_Mayer__MGM_" source="CrossTab:Header:production_companies:Metro-Goldwyn-Mayer (MGM):CountNonNulls:" type="Double" />
+            <Field name="Count_Metropolis_Films" source="CrossTab:Header:production_companies:Metropolis Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Metropolitan_Filmexport" source="CrossTab:Header:production_companies:Metropolitan Filmexport:CountNonNulls:" type="Double" />
+            <Field name="Count_MFP_Munich_Film_Partners" source="CrossTab:Header:production_companies:MFP Munich Film Partners:CountNonNulls:" type="Double" />
+            <Field name="Count_MFP_Munich_Film_Partners_GmbH___Company_I__Produktions_KG" source="CrossTab:Header:production_companies:MFP Munich Film Partners GmbH &amp; Company I. Produktions KG:CountNonNulls:" type="Double" />
+            <Field name="Count_MFPV_Film" source="CrossTab:Header:production_companies:MFPV Film:CountNonNulls:" type="Double" />
+            <Field name="Count_MI_3_Film" source="CrossTab:Header:production_companies:MI 3 Film:CountNonNulls:" type="Double" />
+            <Field name="Count_Michael_De_Luca_Productions" source="CrossTab:Header:production_companies:Michael De Luca Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Mid_Atlantic_Films" source="CrossTab:Header:production_companies:Mid Atlantic Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Mike_Zoss_Productions" source="CrossTab:Header:production_companies:Mike Zoss Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Mikona_Productions_GmbH___Co__KG" source="CrossTab:Header:production_companies:Mikona Productions GmbH &amp; Co. KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Mill_Film" source="CrossTab:Header:production_companies:Mill Film:CountNonNulls:" type="Double" />
+            <Field name="Count_Mirage_Enterprises" source="CrossTab:Header:production_companies:Mirage Enterprises:CountNonNulls:" type="Double" />
+            <Field name="Count_Mirage_Entertainment" source="CrossTab:Header:production_companies:Mirage Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Miramax" source="CrossTab:Header:production_companies:Miramax:CountNonNulls:" type="Double" />
+            <Field name="Count_Miramax_Films" source="CrossTab:Header:production_companies:Miramax Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Misher_Films" source="CrossTab:Header:production_companies:Misher Films:CountNonNulls:" type="Double" />
+            <Field name="Count_MMCB_Film_Produktion_2004" source="CrossTab:Header:production_companies:MMCB Film Produktion 2004:CountNonNulls:" type="Double" />
+            <Field name="Count_MMP_Erste_Filmproduktions" source="CrossTab:Header:production_companies:MMP Erste Filmproduktions:CountNonNulls:" type="Double" />
+            <Field name="Count_Monolith_Pictures__III_" source="CrossTab:Header:production_companies:Monolith Pictures (III):CountNonNulls:" type="Double" />
+            <Field name="Count_Montecito_Picture_Company__The" source="CrossTab:Header:production_companies:Montecito Picture Company, The:CountNonNulls:" type="Double" />
+            <Field name="Count_Morgan_Creek_Productions" source="CrossTab:Header:production_companies:Morgan Creek Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Mosaic_Media_Group" source="CrossTab:Header:production_companies:Mosaic Media Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Motion_Picture_BETA_Produktionsgesellschaft" source="CrossTab:Header:production_companies:Motion Picture BETA Produktionsgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Motion_Picture_ETA_Produktionsgesellschaft" source="CrossTab:Header:production_companies:Motion Picture ETA Produktionsgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Motion_Picture_KAPPA_Produktionsgesellschaft" source="CrossTab:Header:production_companies:Motion Picture KAPPA Produktionsgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Motion_Picture_Production_GmbH___Co__Erste_KG" source="CrossTab:Header:production_companies:Motion Picture Production GmbH &amp; Co. Erste KG:CountNonNulls:" type="Double" />
+            <Field name="Count_Motion_Picture_THETA_Produktionsgesellschaft" source="CrossTab:Header:production_companies:Motion Picture THETA Produktionsgesellschaft:CountNonNulls:" type="Double" />
+            <Field name="Count_Motown_Productions" source="CrossTab:Header:production_companies:Motown Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Moviemakers_Productions__MMP_" source="CrossTab:Header:production_companies:Moviemakers Productions (MMP):CountNonNulls:" type="Double" />
+            <Field name="Count_MTV_Films" source="CrossTab:Header:production_companies:MTV Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Munich_Film_Partners___Company__MFP__GHS_Productions" source="CrossTab:Header:production_companies:Munich Film Partners &amp; Company (MFP) GHS Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Munich_Film_Partners___Company__MFP__MI2_Productions" source="CrossTab:Header:production_companies:Munich Film Partners &amp; Company (MFP) MI2 Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Munich_Film_Partners___Company__MFP__ROE_Production" source="CrossTab:Header:production_companies:Munich Film Partners &amp; Company (MFP) ROE Production:CountNonNulls:" type="Double" />
+            <Field name="Count_Mutual_Film_Company" source="CrossTab:Header:production_companies:Mutual Film Company:CountNonNulls:" type="Double" />
+            <Field name="Count_MVL_Incredible_Productions" source="CrossTab:Header:production_companies:MVL Incredible Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Nancy_Tenenbaum_Films" source="CrossTab:Header:production_companies:Nancy Tenenbaum Films:CountNonNulls:" type="Double" />
+            <Field name="Count_National_Geographic_Society" source="CrossTab:Header:production_companies:National Geographic Society:CountNonNulls:" type="Double" />
+            <Field name="Count_Native_Pictures_Productions" source="CrossTab:Header:production_companies:Native Pictures Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Natural_Nylon_Entertainment" source="CrossTab:Header:production_companies:Natural Nylon Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Neal_Street_Productions" source="CrossTab:Header:production_companies:Neal Street Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Neufeld_Rehme_Productions" source="CrossTab:Header:production_companies:Neufeld Rehme Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_New_Line_Cinema" source="CrossTab:Header:production_companies:New Line Cinema:CountNonNulls:" type="Double" />
+            <Field name="Count_New_Regency_Pictures" source="CrossTab:Header:production_companies:New Regency Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Newmarket_Capital_Group" source="CrossTab:Header:production_companies:Newmarket Capital Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Nickelodeon_Animation_Studios" source="CrossTab:Header:production_companies:Nickelodeon Animation Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Nickelodeon_Movies" source="CrossTab:Header:production_companies:Nickelodeon Movies:CountNonNulls:" type="Double" />
+            <Field name="Count_Nides_McCormick_Productions" source="CrossTab:Header:production_companies:Nides/McCormick Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Night_Chronicles" source="CrossTab:Header:production_companies:Night Chronicles:CountNonNulls:" type="Double" />
+            <Field name="Count_Nina_Saxon_Film_Design" source="CrossTab:Header:production_companies:Nina Saxon Film Design:CountNonNulls:" type="Double" />
+            <Field name="Count_No_Frills_Film_Production" source="CrossTab:Header:production_companies:No Frills Film Production:CountNonNulls:" type="Double" />
+            <Field name="Count_Northern_Lights_Entertainment" source="CrossTab:Header:production_companies:Northern Lights Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_NPV_Entertainment" source="CrossTab:Header:production_companies:NPV Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_NuAmerica_Entertainment" source="CrossTab:Header:production_companies:NuAmerica Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Nuyorican_Productions" source="CrossTab:Header:production_companies:Nuyorican Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_O_N_C__Entertainment" source="CrossTab:Header:production_companies:O.N.C. Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Oak" source="CrossTab:Header:production_companies:Oak:CountNonNulls:" type="Double" />
+            <Field name="Count_Octagon_Films" source="CrossTab:Header:production_companies:Octagon Films:CountNonNulls:" type="Double" />
+            <Field name="Count_One_Race_Films" source="CrossTab:Header:production_companies:One Race Films:CountNonNulls:" type="Double" />
+            <Field name="Count_One_Race_Productions" source="CrossTab:Header:production_companies:One Race Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Oops_Doughnuts_Productions" source="CrossTab:Header:production_companies:Oops Doughnuts Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Oregon_Film_Factory" source="CrossTab:Header:production_companies:Oregon Film Factory:CountNonNulls:" type="Double" />
+            <Field name="Count_Original_Film" source="CrossTab:Header:production_companies:Original Film:CountNonNulls:" type="Double" />
+            <Field name="Count_Orion_Pictures" source="CrossTab:Header:production_companies:Orion Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Pacific_Western" source="CrossTab:Header:production_companies:Pacific Western:CountNonNulls:" type="Double" />
+            <Field name="Count_Palomar_Pictures__II_" source="CrossTab:Header:production_companies:Palomar Pictures (II):CountNonNulls:" type="Double" />
+            <Field name="Count_Paramount_Animation" source="CrossTab:Header:production_companies:Paramount Animation:CountNonNulls:" type="Double" />
+            <Field name="Count_Paramount_Pictures" source="CrossTab:Header:production_companies:Paramount Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Parkes_MacDonald_Productions" source="CrossTab:Header:production_companies:Parkes/MacDonald Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Parkway_Pictures__I_" source="CrossTab:Header:production_companies:Parkway Pictures (I):CountNonNulls:" type="Double" />
+            <Field name="Count_Participant_Productions" source="CrossTab:Header:production_companies:Participant Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Patalex_Productions" source="CrossTab:Header:production_companies:Patalex Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Peirce_Pictures" source="CrossTab:Header:production_companies:Peirce Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Peninsula_Films" source="CrossTab:Header:production_companies:Peninsula Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Penthouse" source="CrossTab:Header:production_companies:Penthouse:CountNonNulls:" type="Double" />
+            <Field name="Count_Permut_Presentations" source="CrossTab:Header:production_companies:Permut Presentations:CountNonNulls:" type="Double" />
+            <Field name="Count_Persistent_Entertainment" source="CrossTab:Header:production_companies:Persistent Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Phase_1_Productions" source="CrossTab:Header:production_companies:Phase 1 Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Phoenix_Pictures" source="CrossTab:Header:production_companies:Phoenix Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Pit_Bull_Productions" source="CrossTab:Header:production_companies:Pit Bull Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Plan_B_Entertainment" source="CrossTab:Header:production_companies:Plan B Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Platinum_Dunes" source="CrossTab:Header:production_companies:Platinum Dunes:CountNonNulls:" type="Double" />
+            <Field name="Count_platinum_studios" source="CrossTab:Header:production_companies:platinum studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Playtone" source="CrossTab:Header:production_companies:Playtone:CountNonNulls:" type="Double" />
+            <Field name="Count_Playtone_Production" source="CrossTab:Header:production_companies:Playtone Production:CountNonNulls:" type="Double" />
+            <Field name="Count_Playtone_Productions" source="CrossTab:Header:production_companies:Playtone Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Point_Grey_Pictures" source="CrossTab:Header:production_companies:Point Grey Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_PolyGram_Filmed_Entertainment" source="CrossTab:Header:production_companies:PolyGram Filmed Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Portobello_Studios" source="CrossTab:Header:production_companies:Portobello Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Primal_Foe_Productions" source="CrossTab:Header:production_companies:Primal Foe Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Protozoa_Pictures" source="CrossTab:Header:production_companies:Protozoa Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Province_of_British_Columbia_Film_Incentive_BC" source="CrossTab:Header:production_companies:Province of British Columbia Film Incentive BC:CountNonNulls:" type="Double" />
+            <Field name="Count_Province_of_British_Columbia_Production_Services_Tax_Credit" source="CrossTab:Header:production_companies:Province of British Columbia Production Services Tax Credit:CountNonNulls:" type="Double" />
+            <Field name="Count_Quinta_Communications" source="CrossTab:Header:production_companies:Quinta Communications:CountNonNulls:" type="Double" />
+            <Field name="Count_Radar_Pictures" source="CrossTab:Header:production_companies:Radar Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Radical_Studios" source="CrossTab:Header:production_companies:Radical Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Rainforest_Films" source="CrossTab:Header:production_companies:Rainforest Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Rastar_Pictures" source="CrossTab:Header:production_companies:Rastar Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Rat_Entertainment" source="CrossTab:Header:production_companies:Rat Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Red_Granite_Pictures" source="CrossTab:Header:production_companies:Red Granite Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Red_Hour_Productions" source="CrossTab:Header:production_companies:Red Hour Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Red_Wagon_Entertainment" source="CrossTab:Header:production_companies:Red Wagon Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Red_Wagon_Productions" source="CrossTab:Header:production_companies:Red Wagon Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Refugee_Films" source="CrossTab:Header:production_companies:Refugee Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Regency_Enterprises" source="CrossTab:Header:production_companies:Regency Enterprises:CountNonNulls:" type="Double" />
+            <Field name="Count_Relativity_Media" source="CrossTab:Header:production_companies:Relativity Media:CountNonNulls:" type="Double" />
+            <Field name="Count_Reliance_BIG_Entertainment" source="CrossTab:Header:production_companies:Reliance BIG Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Reliance_Entertainment" source="CrossTab:Header:production_companies:Reliance Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Renaissance_Pictures" source="CrossTab:Header:production_companies:Renaissance Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Revolution_Studios" source="CrossTab:Header:production_companies:Revolution Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Revolution_Sun_Studios" source="CrossTab:Header:production_companies:Revolution Sun Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Rhino_Films" source="CrossTab:Header:production_companies:Rhino Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Riff_Raff_Film_Productions" source="CrossTab:Header:production_companies:Riff Raff Film Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Rimfire_Films" source="CrossTab:Header:production_companies:Rimfire Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Robert_Simonds_Productions" source="CrossTab:Header:production_companies:Robert Simonds Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Robert_Stigwood_Organization__RSO_" source="CrossTab:Header:production_companies:Robert Stigwood Organization (RSO):CountNonNulls:" type="Double" />
+            <Field name="Count_Romero_Grunwald_Productions" source="CrossTab:Header:production_companies:Romero-Grunwald Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Room_101" source="CrossTab:Header:production_companies:Room 101:CountNonNulls:" type="Double" />
+            <Field name="Count_Ross_Hunter_Productions_Inc_" source="CrossTab:Header:production_companies:Ross Hunter Productions Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Roth_Films" source="CrossTab:Header:production_companies:Roth Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Rysher_Entertainment" source="CrossTab:Header:production_companies:Rysher Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_S_O_A_F__Productions" source="CrossTab:Header:production_companies:S.O.A.F. Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Saga_Film" source="CrossTab:Header:production_companies:Saga Film:CountNonNulls:" type="Double" />
+            <Field name="Count_Samuel_Goldwyn_Films" source="CrossTab:Header:production_companies:Samuel Goldwyn Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Sanctum_Australia" source="CrossTab:Header:production_companies:Sanctum Australia:CountNonNulls:" type="Double" />
+            <Field name="Count_Saturn_Films" source="CrossTab:Header:production_companies:Saturn Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Scion_Films" source="CrossTab:Header:production_companies:Scion Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Scott_Free_Productions" source="CrossTab:Header:production_companies:Scott Free Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Scott_Rudin_Productions" source="CrossTab:Header:production_companies:Scott Rudin Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Sean_S__Cunningham_Films" source="CrossTab:Header:production_companies:Sean S. Cunningham Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Selima_Films_AVV" source="CrossTab:Header:production_companies:Selima Films AVV:CountNonNulls:" type="Double" />
+            <Field name="Count_Selta_Films" source="CrossTab:Header:production_companies:Selta Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Seven_Arts_Pictures" source="CrossTab:Header:production_companies:Seven Arts Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_ShadowCatcher_Entertainment" source="CrossTab:Header:production_companies:ShadowCatcher Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Shady_Acres_Entertainment" source="CrossTab:Header:production_companies:Shady Acres Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Shangri_La_Entertainment" source="CrossTab:Header:production_companies:Shangri-La Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Shark_Productions" source="CrossTab:Header:production_companies:Shark Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Sheinberg_Productions" source="CrossTab:Header:production_companies:Sheinberg Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Shutt_Jones_Productions" source="CrossTab:Header:production_companies:Shutt/Jones Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Sid___Marty_Krofft_Pictures" source="CrossTab:Header:production_companies:Sid &amp; Marty Krofft Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Sidney_Kimmel_Entertainment" source="CrossTab:Header:production_companies:Sidney Kimmel Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Signature_Entertainment" source="CrossTab:Header:production_companies:Signature Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Signature_Pictures" source="CrossTab:Header:production_companies:Signature Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Sikelia_Productions" source="CrossTab:Header:production_companies:Sikelia Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Silver_Pictures" source="CrossTab:Header:production_companies:Silver Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Skydance_Productions" source="CrossTab:Header:production_companies:Skydance Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Smart_Entertainment" source="CrossTab:Header:production_companies:Smart Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_SNL_Studios" source="CrossTab:Header:production_companies:SNL Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Solana_Films" source="CrossTab:Header:production_companies:Solana Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Sommers_Company__The" source="CrossTab:Header:production_companies:Sommers Company, The:CountNonNulls:" type="Double" />
+            <Field name="Count_Spacegate_Productions" source="CrossTab:Header:production_companies:Spacegate Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Spectacle_Entertainment_Group" source="CrossTab:Header:production_companies:Spectacle Entertainment Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Spelling_Films" source="CrossTab:Header:production_companies:Spelling Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Spyglass_Entertainment" source="CrossTab:Header:production_companies:Spyglass Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Stage_III_Productions" source="CrossTab:Header:production_companies:Stage III Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Starway_International_Inc_" source="CrossTab:Header:production_companies:Starway International Inc.:CountNonNulls:" type="Double" />
+            <Field name="Count_Stillking_Films" source="CrossTab:Header:production_companies:Stillking Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Stoller_Global_Solutions" source="CrossTab:Header:production_companies:Stoller Global Solutions:CountNonNulls:" type="Double" />
+            <Field name="Count_Strike_Entertainment" source="CrossTab:Header:production_companies:Strike Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Stuber_Productions" source="CrossTab:Header:production_companies:Stuber Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Studio_Babelsberg" source="CrossTab:Header:production_companies:Studio Babelsberg:CountNonNulls:" type="Double" />
+            <Field name="Count_Studio_Canal" source="CrossTab:Header:production_companies:Studio Canal:CountNonNulls:" type="Double" />
+            <Field name="Count_StudioCanal" source="CrossTab:Header:production_companies:StudioCanal:CountNonNulls:" type="Double" />
+            <Field name="Count_Sullivan_Bluth_Studios" source="CrossTab:Header:production_companies:Sullivan Bluth Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Summit_Entertainment" source="CrossTab:Header:production_companies:Summit Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Swanford_Films" source="CrossTab:Header:production_companies:Swanford Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Syalis_DA" source="CrossTab:Header:production_companies:Syalis DA:CountNonNulls:" type="Double" />
+            <Field name="Count_Syncopy" source="CrossTab:Header:production_companies:Syncopy:CountNonNulls:" type="Double" />
+            <Field name="Count_TC_Productions" source="CrossTab:Header:production_companies:TC Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Tele_MÃ_nchen_Fernseh_Produktionsgesellschaft__TMG_" source="CrossTab:Header:production_companies:Tele MÃ¼nchen Fernseh Produktionsgesellschaft (TMG):CountNonNulls:" type="Double" />
+            <Field name="Count_TF1_Films_Production" source="CrossTab:Header:production_companies:TF1 Films Production:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Bubble_Factory" source="CrossTab:Header:production_companies:The Bubble Factory:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Coppola_Company" source="CrossTab:Header:production_companies:The Coppola Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Directors_Company" source="CrossTab:Header:production_companies:The Directors Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Filmakers_Group" source="CrossTab:Header:production_companies:The Filmakers Group:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Guber_Peters_Company" source="CrossTab:Header:production_companies:The Guber-Peters Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Harvey_Entertainment_Company" source="CrossTab:Header:production_companies:The Harvey Entertainment Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Kennedy_Marshall_Company" source="CrossTab:Header:production_companies:The Kennedy/Marshall Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Ladd_Company" source="CrossTab:Header:production_companies:The Ladd Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Mark_Gordon_Company" source="CrossTab:Header:production_companies:The Mark Gordon Company:CountNonNulls:" type="Double" />
+            <Field name="Count_The_Movie_Network__TMN_" source="CrossTab:Header:production_companies:The Movie Network (TMN):CountNonNulls:" type="Double" />
+            <Field name="Count_The_Production_Company" source="CrossTab:Header:production_companies:The Production Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Three_Strange_Angels" source="CrossTab:Header:production_companies:Three Strange Angels:CountNonNulls:" type="Double" />
+            <Field name="Count_Tim_Burton_Productions" source="CrossTab:Header:production_companies:Tim Burton Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Timnick_Films" source="CrossTab:Header:production_companies:Timnick Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Toho_Towa" source="CrossTab:Header:production_companies:Toho-Towa:CountNonNulls:" type="Double" />
+            <Field name="Count_Tollin_Robbins_Productions" source="CrossTab:Header:production_companies:Tollin/Robbins Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Toma_78" source="CrossTab:Header:production_companies:Toma 78:CountNonNulls:" type="Double" />
+            <Field name="Count_Touchstone_Pictures" source="CrossTab:Header:production_companies:Touchstone Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Tribeca_Productions" source="CrossTab:Header:production_companies:Tribeca Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Trilogy_Entertainment_Group" source="CrossTab:Header:production_companies:Trilogy Entertainment Group:CountNonNulls:" type="Double" />
+            <Field name="Count_Truth_Entertainment" source="CrossTab:Header:production_companies:Truth Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Turman_Foster_Company" source="CrossTab:Header:production_companies:Turman-Foster Company:CountNonNulls:" type="Double" />
+            <Field name="Count_Twentieth_Century_Fox_Film_Corporation" source="CrossTab:Header:production_companies:Twentieth Century Fox Film Corporation:CountNonNulls:" type="Double" />
+            <Field name="Count_Twisted_Pictures" source="CrossTab:Header:production_companies:Twisted Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_U_Drive_Productions" source="CrossTab:Header:production_companies:U-Drive Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_United_Artists" source="CrossTab:Header:production_companies:United Artists:CountNonNulls:" type="Double" />
+            <Field name="Count_United_Plankton_Pictures" source="CrossTab:Header:production_companies:United Plankton Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Universal_Animation_Studios" source="CrossTab:Header:production_companies:Universal Animation Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Universal_Pictures" source="CrossTab:Header:production_companies:Universal Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Universal_Pictures_Corporation" source="CrossTab:Header:production_companies:Universal Pictures Corporation:CountNonNulls:" type="Double" />
+            <Field name="Count_Universal_Pictures_International__UPI_" source="CrossTab:Header:production_companies:Universal Pictures International (UPI):CountNonNulls:" type="Double" />
+            <Field name="Count_Universal_Studios" source="CrossTab:Header:production_companies:Universal Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Valhalla_Motion_Pictures" source="CrossTab:Header:production_companies:Valhalla Motion Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Varsity_Pictures" source="CrossTab:Header:production_companies:Varsity Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Vaughn_Productions" source="CrossTab:Header:production_companies:Vaughn Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Vendome_Pictures" source="CrossTab:Header:production_companies:Vendome Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Village_Roadshow_Pictures" source="CrossTab:Header:production_companies:Village Roadshow Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Vincent_Pictures" source="CrossTab:Header:production_companies:Vincent Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Vinyl_Films" source="CrossTab:Header:production_companies:Vinyl Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Virtual_Studios" source="CrossTab:Header:production_companies:Virtual Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Visiona_Romantica" source="CrossTab:Header:production_companies:Visiona Romantica:CountNonNulls:" type="Double" />
+            <Field name="Count_Voltage_Pictures" source="CrossTab:Header:production_companies:Voltage Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Walden_Media" source="CrossTab:Header:production_companies:Walden Media:CountNonNulls:" type="Double" />
+            <Field name="Count_Walt_Disney_Productions" source="CrossTab:Header:production_companies:Walt Disney Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Warner_Bros_" source="CrossTab:Header:production_companies:Warner Bros.:CountNonNulls:" type="Double" />
+            <Field name="Count_Waverly_Films" source="CrossTab:Header:production_companies:Waverly Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Wayfare_Entertainment" source="CrossTab:Header:production_companies:Wayfare Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_WCG_Entertainment_Productions" source="CrossTab:Header:production_companies:WCG Entertainment Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Weed_Road_Pictures" source="CrossTab:Header:production_companies:Weed Road Pictures:CountNonNulls:" type="Double" />
+            <Field name="Count_Wheelhouse_Entertainment" source="CrossTab:Header:production_companies:Wheelhouse Entertainment:CountNonNulls:" type="Double" />
+            <Field name="Count_Why_Not_Productions" source="CrossTab:Header:production_companies:Why Not Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_WideAwake" source="CrossTab:Header:production_companies:WideAwake:CountNonNulls:" type="Double" />
+            <Field name="Count_Wild_Bunch" source="CrossTab:Header:production_companies:Wild Bunch:CountNonNulls:" type="Double" />
+            <Field name="Count_Wild_West_Picture_Show_Productions" source="CrossTab:Header:production_companies:Wild West Picture Show Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Wildwood_Enterprises" source="CrossTab:Header:production_companies:Wildwood Enterprises:CountNonNulls:" type="Double" />
+            <Field name="Count_William_Castle_Productions" source="CrossTab:Header:production_companies:William Castle Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Wind_Dancer_Productions" source="CrossTab:Header:production_companies:Wind Dancer Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_WingNut_Films" source="CrossTab:Header:production_companies:WingNut Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Winkler_Films" source="CrossTab:Header:production_companies:Winkler Films:CountNonNulls:" type="Double" />
+            <Field name="Count_Working_Title_Films" source="CrossTab:Header:production_companies:Working Title Films:CountNonNulls:" type="Double" />
+            <Field name="Count_World_Wrestling_Entertainment__WWE_" source="CrossTab:Header:production_companies:World Wrestling Entertainment (WWE):CountNonNulls:" type="Double" />
+            <Field name="Count_WWE_Studios" source="CrossTab:Header:production_companies:WWE Studios:CountNonNulls:" type="Double" />
+            <Field name="Count_Yorktown_Productions" source="CrossTab:Header:production_companies:Yorktown Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Zanuck_Brown_Productions" source="CrossTab:Header:production_companies:Zanuck/Brown Productions:CountNonNulls:" type="Double" />
+            <Field name="Count_Zehnte_Babelsberg" source="CrossTab:Header:production_companies:Zehnte Babelsberg:CountNonNulls:" type="Double" />
+            <Field name="Count_Zide_Perry_Productions" source="CrossTab:Header:production_companies:Zide-Perry Productions:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="Count_Paramount_Pictures" selected="True" rename="Paramount Pictures" type="Int16" size="2" />
+            <SelectField field="Count_Universal_Pictures" selected="True" rename="Universal Pictures" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_3c2732a1d8be49358ca199001844ab09_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="918" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Left_keywords" selected="False" />
+                <SelectField field="Left_genres" selected="False" />
+                <SelectField field="Left_production_companies" selected="False" />
+                <SelectField field="Left_vote_average" selected="False" />
+                <SelectField field="Left_release_year" selected="False" />
+                <SelectField field="Left_budget_adj" selected="False" />
+                <SelectField field="Left_revenue_adj" selected="False" />
+                <SelectField field="Left_Profit Adj" selected="False" />
+                <SelectField field="Right_id" selected="False" rename="Right_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_1ae8b7acd2d443fabf7b7085b3df4c7f_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([production_companies], "Paramount Pictures") OR 
+Contains([production_companies], "Universal Pictures")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([production_companies], "Paramount Pictures") OR 
+Co...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_97d71ba196ba461aad5d45909028dd51_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies_cleaned_for_ProductionCompanies.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies_cleaned_for_ProductionCompanies.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Based on Novel" type="Int16" size="2" expression="-1 * Contains([keywords], &quot;based on novel&quot;)" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Based on Novel=-1 * Contains([keywords], "based on novel")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_b3de755f0aae46f08d569a4cb68a2c01_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="keywords" selected="False" />
+            <SelectField field="genres" selected="False" />
+            <SelectField field="production_companies" selected="False" />
+            <SelectField field="vote_average" selected="False" />
+            <SelectField field="release_year" selected="False" />
+            <SelectField field="budget_adj" selected="False" />
+            <SelectField field="revenue_adj" selected="False" />
+            <SelectField field="Profit Adj" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="738" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies_cleaned_for_NovelBased.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies_cleaned_for_NovelBased.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="original_title" selected="True" />
+            <SelectField field="genres" selected="True" />
+            <SelectField field="budget_adj" selected="True" type="Double" size="8" />
+            <SelectField field="revenue_adj" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="738" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[budget_adj] != 0 AND [revenue_adj] != 0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[budget_adj] != 0 AND [revenue_adj] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_5908_acf206ae245d4dfe9177458f628f5bc7_\Engine_1548_58f57e029e99489da44dea4407ae30fa_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="930" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies_cleaned_for_BestMovies.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies_cleaned_for_BestMovies.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="genres" selected="False" />
+            <SelectField field="budget_adj" selected="False" />
+            <SelectField field="revenue_adj" selected="False" />
+            <SelectField field="genres2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="642" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>genres</Field>
+          <NumFields value="2" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>genres</RootName>
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="30" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output26" />
+      <Destination ToolID="30" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output26" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="True" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>cleaning_movie_dataSet_Genres</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

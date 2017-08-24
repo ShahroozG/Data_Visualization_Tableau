@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>movies.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="imdb_id" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="popularity" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="budget" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="revenue" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="original_title" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="cast" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="homepage" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="director" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="tagline" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="keywords" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="overview" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="runtime" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="genres" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="production_companies" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="release_date" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="vote_count" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="vote_average" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="release_year" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="budget_adj" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+            <Field name="revenue_adj" size="254" source="File: C:\Users\Shahrooz\Desktop\Learning\Data Science\Udacity\Business_Analysis\P4_Tableau\project3-1\movies.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="popularity" selected="True" type="Double" size="8" />
+            <SelectField field="budget" selected="True" type="Double" size="8" />
+            <SelectField field="revenue" selected="True" type="Double" size="8" />
+            <SelectField field="release_date" selected="True" type="Date" size="10" />
+            <SelectField field="vote_count" selected="True" type="Int64" size="8" />
+            <SelectField field="vote_average" selected="True" type="Double" size="8" />
+            <SelectField field="release_year" selected="True" type="Int32" size="4" />
+            <SelectField field="budget_adj" selected="True" type="Double" size="8" />
+            <SelectField field="revenue_adj" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_36339271a6b74a9aaf375f6480b5c986_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([genres]) AND [budget] != 0 AND [revenue] != 0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([genres]) AND [budget] != 0 AND [revenue] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_bb9290b92e7549b798832bc9f4f367c9_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="486" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">id=False,imdb_id=False,popularity=True,budget=False,revenue=False,original_title=False,cast=False,homepage=False,director=False,tagline=False,keywords=False,overview=False,runtime=False,genres=False,production_companies=False,release_date=False,vote_count=True,vote_average=True,release_year=False,budget_adj=False,revenue_adj=False</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="462" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">id=False,imdb_id=False,popularity=True,budget=False,revenue=False,original_title=False,cast=False,homepage=False,director=False,tagline=False,keywords=False,overview=False,runtime=False,genres=False,production_companies=False,release_date=False,vote_count=True,vote_average=True,release_year=False,budget_adj=False,revenue_adj=False</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="594" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_8a92fbd0435f412fb10f3d0013783f88_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_e3ad7e42214d49109a2ebda76e8d2b1f_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="510" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="genres" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: genres</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_e359b761e7ef4f8081e8db54fd49a215_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="246" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">popularity</Value>
+          <Value name="y var">vote_average</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">id</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Shahrooz\AppData\Local\Temp\Engine_12636_d1add0351a3b478a881d338652cdab2c_\Engine_1548_b0e4936c27634296b603c68990dac8e3_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="20" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="14" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="False" />
+      <Destination ToolID="15" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Duplicates" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Scater Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>data_investigation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
